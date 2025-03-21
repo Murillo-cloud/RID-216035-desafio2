@@ -1,0 +1,282 @@
+html {
+    font-family: montserrat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1rem 5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-feed {
+    width: 70%;
+    margin: 0 1.5rem 0 0;
+}
+
+.header {
+    background-color: #02a28f;
+    color: white;
+}
+
+.header>h1 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.highlights {
+    position: relative;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.highlights h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.highlights p {
+    margin: 0;
+    padding: 0;
+}
+
+.highlights>div {
+    position: absolute;
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    bottom: 0;
+    background: linear-gradient(to top, #000 10%, rgba(100, 100, 100, 0) 100%);
+    border-radius: 1rem;
+}
+
+.highlights>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    height: 24.75rem;
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+    width: 30%;
+}
+
+.Tag-sidebar {
+    background-color: #02a28f;
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.5rem rgb(207, 207, 207);
+}
+
+.sidebar article {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgb(207, 207, 207);
+}
+
+.sidebar article img {
+    width: 8rem;
+    height: 4.375rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-right: 0.7rem;
+}
+
+.popular {
+    margin-bottom: 2rem;
+}
+
+.popular>article>div>h3 {
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+.popular>article>div>p {
+    font-size: 0.75rem;
+}
+
+.list-categories {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #616161;
+}
+
+.list-categories>ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-categories>ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+.list-categories p {
+    margin: 0;
+}
+
+.list-categories p {
+    margin: 0;
+}
+
+.title_recent {
+    display: flex;
+    width: calc(100% - 3rem);
+    background-color: #02a28f;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    color: white;
+}
+
+.title_recent a {
+    color: white;
+}
+
+.title_recent h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.grid-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-news img {
+    height: 11.9375rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.new {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgb(207, 207, 207);
+}
+
+.news_description {
+    padding: 0.7rem 1.2rem 1rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.news_description>.category {
+    color: #02a28f;
+}
+
+.news_description h2 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.news_description p {
+    text-align: justify;
+}
+
+.news_description span .by {
+    font-weight: 600;
+}
+
+footer {
+    background-color: #02a28f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    color: white;
+    font-weight: 400;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-feed {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar>.Tag-sidebar {
+        text-align: center;
+    }
+
+    .grid-news {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main-feed {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-top: 2rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 1rem 5rem;
+    }
+
+    @media only screen and (min-width: 1700px) {
+        .container {
+            padding: 1rem 20rem;
+        }
+    }
+}
